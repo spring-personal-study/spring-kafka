@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/message/send
+Content-Type: application/json
+
+{
+  "id": "msg-123",
+  "content": "프로토버프 전송 테스트입니다"
+}
+
+###
+

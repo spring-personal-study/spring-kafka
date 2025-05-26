@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: pursue503.com:9092,pursue503.com:9093,pursue503.com:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: edu.kafka.config.ProtobufSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      ack-mode: manual
